@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NPM_CONFIG_UNSAFE_PERM: true
+      NPM_CONFIG_LEGACY_PEER_DEPS: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -41,7 +42,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install --ignore-scripts
+          npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -62,6 +63,7 @@ jobs:
     runs-on: windows-latest
     env:
       NPM_CONFIG_UNSAFE_PERM: true
+      NPM_CONFIG_LEGACY_PEER_DEPS: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -87,7 +89,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install --ignore-scripts
+          npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -101,6 +103,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NPM_CONFIG_UNSAFE_PERM: true
+      NPM_CONFIG_LEGACY_PEER_DEPS: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -124,7 +127,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install --ignore-scripts
+          npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -139,6 +142,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NPM_CONFIG_UNSAFE_PERM: true
+      NPM_CONFIG_LEGACY_PEER_DEPS: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.3
@@ -161,7 +165,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install --ignore-scripts
+          npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js'
 
       - name: Build 🔧
