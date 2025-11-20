@@ -1,8 +1,6 @@
 name: Unit Tests
 on:
   push:
-    branches:
-      - main
   pull_request:
   merge_group:
 
@@ -15,7 +13,6 @@ jobs:
           - "14"
           - "16"
           - "18"
-          
     runs-on: ubuntu-latest
     env:
       NPM_CONFIG_UNSAFE_PERM: true
