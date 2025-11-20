@@ -45,6 +45,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
+          npm install @babel/core@7.22.10 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -92,6 +93,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
+          npm install @babel/core@7.22.10 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -130,6 +132,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
+          npm install @babel/core@7.22.10 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -168,6 +171,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
+          npm install @babel/core@7.22.10 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js'
 
       - name: Build 🔧
