@@ -44,7 +44,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
+          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests --legacy-peer-deps
 
       - name: Build 🔧
         run: |
@@ -90,7 +90,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
+          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests --legacy-peer-deps
 
       - name: Build 🔧
         run: |
@@ -127,7 +127,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
+          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests --legacy-peer-deps
 
       - name: Build 🔧
         run: |
@@ -164,7 +164,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js'
+          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --legacy-peer-deps --legacy-peer-deps
 
       - name: Build 🔧
         run: |
