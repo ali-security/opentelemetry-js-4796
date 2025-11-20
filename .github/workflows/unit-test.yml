@@ -45,7 +45,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
-          npm install import-in-the-middle@1.4.2 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors@^1.1.1 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -93,7 +93,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
-          npm install import-in-the-middle@1.4.2 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors@^1.1.1 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -132,7 +132,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
-          npm install import-in-the-middle@1.4.2 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors@^1.1.1 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
@@ -171,7 +171,7 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts --legacy-peer-deps
-          npm install import-in-the-middle@1.4.2 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors@^1.1.1 --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle'
 
       - name: Build 🔧
