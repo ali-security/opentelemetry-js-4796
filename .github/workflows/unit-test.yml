@@ -44,7 +44,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --ignore-scripts --registry https://registry.npmjs.org/
           npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle' --ignore @opentelemetry/selenium-tests
 
@@ -92,7 +92,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --ignore-scripts --registry https://registry.npmjs.org/
           npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle' --ignore @opentelemetry/selenium-tests
 
@@ -131,7 +131,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --ignore-scripts --registry https://registry.npmjs.org/
           npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle' --ignore @opentelemetry/selenium-tests
 
@@ -170,7 +170,7 @@ jobs:
 
       - name: Bootstrap
         run: |
-          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --registry https://registry.npmjs.org/
+          npm install import-in-the-middle@1.4.2 picocolors --legacy-peer-deps --no-save --ignore-scripts --registry https://registry.npmjs.org/
           npm install --ignore-scripts --legacy-peer-deps
           npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --nohoist='import-in-the-middle'
 
